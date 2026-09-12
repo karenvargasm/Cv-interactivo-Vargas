@@ -18,7 +18,7 @@
       validate: function (value) {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (value.trim().length === 0) return 'El correo es obligatorio.';
-        if (!emailPattern.test(value.trim())) return 'Ingresa un correo valido, por ejemplo nombre@dominio.com.';
+        if (!emailPattern.test(value.trim())) return 'Ingresa un correo válido, por ejemplo nombre@dominio.com.';
         return '';
       }
     },
@@ -34,7 +34,7 @@
       errorId: 'error_message',
       validate: function (value) {
         if (value.trim().length === 0) return 'El mensaje es obligatorio.';
-        if (value.trim().length < 10) return 'Agrega un poco mas de informacion, minimo 10 caracteres.';
+        if (value.trim().length < 10) return 'Agrega un poco más de información, mínimo 10 caracteres.';
         return '';
       }
     }
@@ -80,7 +80,7 @@
       return;
     }
 
-    statusMessage.textContent = 'Mensaje enviado correctamente. Te respondere pronto.';
+    statusMessage.textContent = 'Mensaje enviado correctamente. Te responderé pronto.';
     statusMessage.className = 'form_status is_success';
     form.reset();
   });
