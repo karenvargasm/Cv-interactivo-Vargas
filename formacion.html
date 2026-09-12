@@ -104,28 +104,40 @@
   </ul>
 </section>
 
-    <section class="reveal_on_scroll">
-      <h2>Áreas de formación cursadas</h2>
-      <p>Contenidos y unidades trabajadas a lo largo de la carrera relacionados con este proyecto y con mi perfil técnico.</p>
-      <div class="stat_grid">
-        <div class="stat_card">
-          <span class="stat_value">TI</span>
-          <span class="stat_label">Tecnologías Web I</span>
-        </div>
-        <div class="stat_card">
-          <span class="stat_value">BD</span>
-          <span class="stat_label">Bases de Datos</span>
-        </div>
-        <div class="stat_card">
-          <span class="stat_value">AD</span>
-          <span class="stat_label">Análisis y diseño de sistemas</span>
-        </div>
-        <div class="stat_card">
-          <span class="stat_value">RD</span>
-          <span class="stat_label">Redes y Comunicaciones</span>
-        </div>
-      </div>
-    </section>
+<section class="reveal_on_scroll">
+  <h2>Áreas de formación cursadas</h2>
+  <p>Contenidos y unidades trabajadas a lo largo de la carrera relacionados con este proyecto y con mi perfil técnico. Selecciona una tarjeta para ver el detalle.</p>
+  <div class="stat_grid">
+    <div class="stat_card">
+      <button type="button" class="stat_trigger" aria-expanded="false" aria-controls="stat_desc_ti">
+        <span class="stat_value">TI</span>
+        <span class="stat_label">Tecnologías Web I</span>
+      </button>
+      <p class="stat_popover" id="stat_desc_ti">HTML5 semántico, CSS3 moderno, JavaScript nativo, responsividad, accesibilidad y control de versiones con Git.</p>
+    </div>
+    <div class="stat_card">
+      <button type="button" class="stat_trigger" aria-expanded="false" aria-controls="stat_desc_bd">
+        <span class="stat_value">BD</span>
+        <span class="stat_label">Bases de Datos</span>
+      </button>
+      <p class="stat_popover" id="stat_desc_bd">Modelado de bases de datos relacionales, lenguaje SQL, PostgreSQL y normalización de datos.</p>
+    </div>
+    <div class="stat_card">
+      <button type="button" class="stat_trigger" aria-expanded="false" aria-controls="stat_desc_ad">
+        <span class="stat_value">AD</span>
+        <span class="stat_label">Análisis y Diseño de Sistemas</span>
+      </button>
+      <p class="stat_popover" id="stat_desc_ad">Modelado de entidades, procesos y estructura funcional de sistemas de información.</p>
+    </div>
+    <div class="stat_card">
+      <button type="button" class="stat_trigger" aria-expanded="false" aria-controls="stat_desc_rd">
+        <span class="stat_value">RD</span>
+        <span class="stat_label">Redes y Comunicaciones</span>
+      </button>
+      <p class="stat_popover" id="stat_desc_rd">Configuración de dispositivos de red, VLAN, conectividad y servicios como DNS, HTTP y FTP.</p>
+    </div>
+  </div>
+</section>
 
   </main>
 </div>
@@ -144,6 +156,7 @@
 <script src="js/theme.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/email.js"></script>
+<script src="js/formation-areas.js"></script>
 <script src="js/reveal.js"></script>
 </body>
 </html>
