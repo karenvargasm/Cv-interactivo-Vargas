@@ -92,32 +92,54 @@
 .theme_toggle {
   display: flex;
   align-items: center;
-  gap: 0.55em;
+  gap: 0.6em;
   background-color: var(--bg_panel_alt);
   color: var(--text_main);
   border: 1px solid var(--border_soft);
   border-radius: 999px;
-  padding: 0.45em 0.95em;
+  padding: 0.4em 1em 0.4em 0.7em;
   font-family: var(--font_sans);
   font-size: 0.88rem;
   cursor: pointer;
-  transition: transform var(--transition_base);
+  transition: transform var(--transition_base), border-color var(--transition_base);
 }
 
 .theme_toggle:hover {
   transform: translateY(-1px);
+  border-color: var(--accent_warning);
 }
 
-.toggle_dot {
-  width: 12px;
-  height: 12px;
+.toggle_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
-  background-color: var(--accent_warning);
-  transition: background-color var(--transition_base);
+  background-color: var(--bg_panel);
 }
 
-[data-theme='light'] .toggle_dot {
-  background-color: var(--accent_function);
+.toggle_icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.icon_moon {
+  display: block;
+  color: var(--accent_function);
+}
+
+.icon_sun {
+  display: none;
+  color: var(--accent_warning);
+}
+
+[data-theme='light'] .icon_moon {
+  display: none;
+}
+
+[data-theme='light'] .icon_sun {
+  display: block;
 }
 
 .layout_shell {
