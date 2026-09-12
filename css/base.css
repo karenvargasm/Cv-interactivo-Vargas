@@ -23,12 +23,12 @@
 }
 
 [data-theme='light'] {
-  --bg_body: #fafafa;
-  --bg_panel: #ffffff;
-  --bg_panel_alt: #f1f1f5;
-  --text_main: #232330;
-  --text_muted: #5b5f70;
-  --border_soft: #e2e2ea;
+  --bg_body: #f7f1e7;
+  --bg_panel: #fffaf2;
+  --bg_panel_alt: #f0e6d6;
+  --text_main: #2c2620;
+  --text_muted: #6f6455;
+  --border_soft: #e6d9c3;
 }
 
 *, *::before, *::after {
