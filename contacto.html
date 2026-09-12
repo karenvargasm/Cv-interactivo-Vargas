@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Karen Vargas Medrano</title>
+<meta name="description" content="Formulario de contacto de Karen Grissel Vargas Medrano.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="skip_link" href="#contenido_principal">Saltar al contenido principal</a>
+
+<header class="site_header">
+  <div class="header_inner">
+    <a class="logo_link" href="index.html">
+      <p class="logo_tag">&lt;/&gt;</p>
+      <p class="logo_name">karen.dev</p>
+    </a>
+    <div class="header_actions">
+      <button id="theme_toggle" class="theme_toggle" type="button" aria-pressed="false">
+        <span class="toggle_dot"></span>
+        <span class="toggle_label">Modo oscuro</span>
+      </button>
+      <button id="mobile_nav_toggle" class="mobile_nav_toggle" type="button" aria-label="Abrir menu" aria-controls="side_nav" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout_shell">
+  <nav class="side_nav" id="side_nav" aria-label="Navegacion principal">
+    <p class="nav_heading">explorador</p>
+    <ul class="nav_list">
+      <li><a href="index.html" class="nav_link"><span class="nav_dot" style="--dot-color:#61afef"></span>index.html</a></li>
+      <li><a href="perfil.html" class="nav_link"><span class="nav_dot" style="--dot-color:#c586c0"></span>perfil.html</a></li>
+      <li><a href="formacion.html" class="nav_link"><span class="nav_dot" style="--dot-color:#98c379"></span>formacion.html</a></li>
+      <li><a href="habilidades.html" class="nav_link"><span class="nav_dot" style="--dot-color:#e5a260"></span>habilidades.html</a></li>
+      <li><a href="proyectos.html" class="nav_link"><span class="nav_dot" style="--dot-color:#f07178"></span>proyectos.html</a></li>
+      <li><a href="experiencia.html" class="nav_link"><span class="nav_dot" style="--dot-color:#61afef"></span>experiencia.html</a></li>
+      <li><a href="contacto.html" class="nav_link"><span class="nav_dot" style="--dot-color:#c586c0"></span>contacto.html</a></li>
+    </ul>
+    <p class="nav_footer_note">SIS-214 / Tecnologias Web I</p>
+  </nav>
+
+  <main id="contenido_principal">
+
+    <section class="page_hero reveal_on_scroll">
+      <p class="page_hero_tag">contacto.html</p>
+      <h1>Contacto</h1>
+      <p class="page_hero_desc">
+        Completa el formulario para escribirme directamente. Los campos se
+        validan antes de enviarse.
+      </p>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <form id="contact_form" class="contact_form" novalidate>
+        <div class="form_field">
+          <label for="input_name">Nombre completo</label>
+          <input type="text" id="input_name" name="nombre" autocomplete="name" required minlength="3">
+          <p class="field_error" id="error_name" role="alert"></p>
+        </div>
+
+        <div class="form_field">
+          <label for="input_email">Correo electronico</label>
+          <input type="email" id="input_email" name="correo" autocomplete="email" required>
+          <p class="field_error" id="error_email" role="alert"></p>
+        </div>
+
+        <div class="form_field">
+          <label for="input_subject">Asunto</label>
+          <input type="text" id="input_subject" name="asunto" required minlength="3">
+          <p class="field_error" id="error_subject" role="alert"></p>
+        </div>
+
+        <div class="form_field">
+          <label for="input_message">Mensaje</label>
+          <textarea id="input_message" name="mensaje" rows="5" required minlength="10"></textarea>
+          <p class="field_error" id="error_message" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn btn_primary">Enviar mensaje</button>
+        <p class="form_status" id="form_status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <h2>Otras formas de contacto</h2>
+      <div class="quick_facts">
+        <div class="quick_fact"><span>Correo</span><span>karenvargasmedrano1@gmail.com</span></div>
+        <div class="quick_fact"><span>Telefono</span><span>+591 77770552</span></div>
+        <div class="quick_fact"><span>Ubicacion</span><span>La Paz, Bolivia</span></div>
+        <div class="quick_fact"><span>GitHub</span><span>github.com/karenvargasm</span></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site_footer">
+  <p>&copy; <span id="current_year"></span> Karen Grissel Vargas Medrano</p>
+  <ul class="social_links" aria-label="Enlaces profesionales">
+    <li><a href="https://github.com/karenvargasm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a href="http://www.linkedin.com/in/karen-grissel-vargas-medrano-57955a436" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="mailto:karenvargasmedrano1@gmail.com">Correo</a></li>
+  </ul>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
