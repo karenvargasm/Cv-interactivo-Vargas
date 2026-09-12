@@ -36,9 +36,18 @@
 
 .page_hero_tag {
   font-family: var(--font_mono);
-  color: var(--accent_string);
+  color: var(--text_muted);
   font-size: 0.85rem;
   margin-bottom: 0.5em;
+}
+
+.page_hero_tag a {
+  color: var(--accent_string);
+  text-decoration: none;
+}
+
+.page_hero_tag a:hover {
+  text-decoration: underline;
 }
 
 .page_hero_desc {
