@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil profesional - Karen Vargas Medrano</title>
+<meta name="description" content="Perfil profesional de Karen Grissel Vargas Medrano, estudiante de Ingenieria de Sistemas.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="skip_link" href="#contenido_principal">Saltar al contenido principal</a>
+
+<header class="site_header">
+  <div class="header_inner">
+    <a class="logo_link" href="index.html">
+      <p class="logo_tag">&lt;/&gt;</p>
+      <p class="logo_name">karen.dev</p>
+    </a>
+    <div class="header_actions">
+      <button id="theme_toggle" class="theme_toggle" type="button" aria-pressed="false">
+        <span class="toggle_dot"></span>
+        <span class="toggle_label">Modo oscuro</span>
+      </button>
+      <button id="mobile_nav_toggle" class="mobile_nav_toggle" type="button" aria-label="Abrir menu" aria-controls="side_nav" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout_shell">
+  <nav class="side_nav" id="side_nav" aria-label="Navegacion principal">
+    <p class="nav_heading">explorador</p>
+    <ul class="nav_list">
+      <li><a href="index.html" class="nav_link"><span class="nav_dot" style="--dot-color:#61afef"></span>index.html</a></li>
+      <li><a href="perfil.html" class="nav_link"><span class="nav_dot" style="--dot-color:#c586c0"></span>perfil.html</a></li>
+      <li><a href="formacion.html" class="nav_link"><span class="nav_dot" style="--dot-color:#98c379"></span>formacion.html</a></li>
+      <li><a href="habilidades.html" class="nav_link"><span class="nav_dot" style="--dot-color:#e5a260"></span>habilidades.html</a></li>
+      <li><a href="proyectos.html" class="nav_link"><span class="nav_dot" style="--dot-color:#f07178"></span>proyectos.html</a></li>
+      <li><a href="experiencia.html" class="nav_link"><span class="nav_dot" style="--dot-color:#61afef"></span>experiencia.html</a></li>
+      <li><a href="contacto.html" class="nav_link"><span class="nav_dot" style="--dot-color:#c586c0"></span>contacto.html</a></li>
+    </ul>
+    <p class="nav_footer_note">SIS-214 / Tecnologias Web I</p>
+  </nav>
+
+  <main id="contenido_principal">
+
+    <section class="page_hero reveal_on_scroll">
+      <p class="page_hero_tag">perfil.html</p>
+      <h1>Perfil profesional</h1>
+      <p class="page_hero_desc">
+        Una vision general de mi formacion, intereses y motivaciones dentro
+        del area de tecnologia.
+      </p>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <p>
+        Estudiante de sexto semestre de Ingenieria de Sistemas en la Universidad
+        Catolica Boliviana San Pablo, con interes en el desarrollo de software,
+        desarrollo web, bases de datos y tecnologias de la informacion. Cuento
+        con experiencia academica en programacion, diseno de aplicaciones,
+        desarrollo web, bases de datos y configuracion de redes.
+      </p>
+      <p>
+        Me interesa continuar fortaleciendo mis conocimientos tecnicos mediante
+        el desarrollo de proyectos y la resolucion de problemas tecnologicos,
+        combinando fundamentos solidos de programacion con buenas practicas de
+        diseno de software.
+      </p>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <h2>Habilidades personales</h2>
+      <ul class="tag_list">
+        <li class="tag">Trabajo en equipo</li>
+        <li class="tag">Responsabilidad</li>
+        <li class="tag">Resolucion de problemas</li>
+        <li class="tag">Organizacion</li>
+        <li class="tag">Aprendizaje continuo</li>
+        <li class="tag">Adaptabilidad</li>
+        <li class="tag">Pensamiento logico</li>
+      </ul>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <h2>Idiomas</h2>
+      <div class="skills_grid">
+        <div class="skill_card">
+          <div class="skill_card_head">
+            <h3>Espanol</h3>
+            <span class="skill_percent">Nativo</span>
+          </div>
+          <div class="skill_bar">
+            <span class="skill_fill" style="--fill-level:100%"></span>
+          </div>
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_head">
+            <h3>Ingles</h3>
+            <span class="skill_percent">Intermedio</span>
+          </div>
+          <div class="skill_bar">
+            <span class="skill_fill" style="--fill-level:65%"></span>
+          </div>
+        </div>
+        <div class="skill_card">
+          <div class="skill_card_head">
+            <h3>Coreano</h3>
+            <span class="skill_percent">Basico</span>
+          </div>
+          <div class="skill_bar">
+            <span class="skill_fill" style="--fill-level:25%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site_footer">
+  <p>&copy; <span id="current_year"></span> Karen Grissel Vargas Medrano</p>
+  <ul class="social_links" aria-label="Enlaces profesionales">
+    <li><a href="https://github.com/karenvargasm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a href="http://www.linkedin.com/in/karen-grissel-vargas-medrano-57955a436" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="mailto:karenvargasmedrano1@gmail.com">Correo</a></li>
+  </ul>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/reveal.js"></script>
+</body>
+</html>
