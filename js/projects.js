@@ -4,27 +4,27 @@
 
   const projects = [
     {
-      id: 'merceria',
-      title: 'Portal Web Merceria Express',
+      id: 'mercería',
+      title: 'Portal Web Mercería Express',
       category: 'Desarrollo Web',
-      summary: 'Interfaz web para presentar productos y servicios con diseno responsivo.',
+      summary: 'Interfaz web para presentar productos y servicios con diseño responsivo.',
       details: [
         'Desarrollo de una interfaz web para presentar productos y servicios',
-        'Diseno de paginas de inicio, catalogo, categorias y productos',
+        'diseño de paginas de inicio, catalogo, categorias y productos',
         'Aplicacion de HTML5, CSS3 y JavaScript',
-        'Implementacion de diseno responsivo',
+        'Implementacion de diseño responsivo',
         'Trabajo colaborativo mediante control de versiones'
       ]
     },
     {
       id: 'kanbas',
-      title: 'Sistema de gestion de tareas Kanbas',
-      category: 'Analisis y Diseno',
-      summary: 'Analisis y diseno de un sistema de gestion de tareas tipo kanban.',
+      title: 'Sistema de gestión de tareas Kanbas',
+      category: 'Análisis y diseño',
+      summary: 'Análisis y diseño de un sistema de gestión de tareas tipo kanban.',
       details: [
         'Modelado de entidades como Usuario, Tarea, Estado, Sprint y Comentario',
-        'Diseno de la estructura funcional del sistema',
-        'Aplicacion de conceptos de analisis y diseno de sistemas'
+        'Diseño de la estructura funcional del sistema',
+        'Aplicacion de conceptos de análisis y diseño de sistemas'
       ]
     },
     {
@@ -41,14 +41,14 @@
     },
     {
       id: 'inmuebles',
-      title: 'Base de datos para gestion de inmuebles',
+      title: 'Base de datos para gestión de inmuebles',
       category: 'Bases de Datos',
-      summary: 'Diseno de una base de datos relacional para gestion de inmuebles.',
+      summary: 'Diseño de una base de datos relacional para gestión de inmuebles.',
       details: [
-        'Modelado de una base de datos para la gestion de inmuebles y usuarios',
-        'Utilizacion de PostgreSQL y SQL',
-        'Diseno de tablas, relaciones y restricciones',
-        'Aplicacion de conceptos de normalizacion y organizacion de datos'
+        'Modelado de una base de datos para la gestión de inmuebles y usuarios',
+        'Utilización de PostgreSQL y SQL',
+        'Diseño de tablas, relaciones y restricciones',
+        'Aplicacion de conceptos de normalización y organización de datos'
       ]
     },
     {
@@ -59,16 +59,16 @@
       details: [
         'Configuracion de VLAN',
         'Configuracion basica de dispositivos de red',
-        'Implementacion y comprobacion de conectividad',
-        'Configuracion de servicios como DNS, HTTP, FTP y correo electronico',
+        'Implementacion y comprobación de conectividad',
+        'Configuracion de servicios como DNS, HTTP, FTP y correo electrónico',
         'Uso de Cisco Packet Tracer'
       ]
     },
     {
       id: 'flutter',
       title: 'Aplicaciones con Flutter',
-      category: 'Desarrollo Movil',
-      summary: 'Interfaces y aplicaciones moviles construidas con Flutter.',
+      category: 'Desarrollo Móvil',
+      summary: 'Interfaces y aplicaciones móviles construidas con Flutter.',
       details: [
         'Creacion de interfaces utilizando Flutter',
         'Implementacion de componentes y estructuras basicas de aplicaciones',
