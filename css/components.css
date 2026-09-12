@@ -20,6 +20,7 @@
 .btn_primary {
   background-color: var(--accent_function);
   color: #10131c;
+  box-shadow: 0 14px 30px -16px var(--accent_function);
 }
 
 .btn_secondary {
@@ -92,6 +93,12 @@
   border: 1px solid var(--border_soft);
   border-radius: var(--radius_base);
   padding: 1.1rem 1.25rem;
+  transition: transform var(--transition_base), border-color var(--transition_base);
+}
+
+.stat_card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent_function);
 }
 
 .stat_value {

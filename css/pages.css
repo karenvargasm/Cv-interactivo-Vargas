@@ -47,12 +47,16 @@
 .hero_figure {
   flex: 0 0 auto;
   margin: 0 auto;
+  padding: 8px;
+  border-radius: calc(var(--radius_base) + 10px);
+  background: linear-gradient(135deg, var(--accent_function), var(--accent_keyword));
 }
 
 .hero_figure img {
   border-radius: var(--radius_base);
   width: 190px;
   height: 190px;
+  background-color: var(--bg_panel);
 }
 
 .home_terminal_wrap {

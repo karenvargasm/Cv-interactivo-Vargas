@@ -2,7 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 30;
-  background-color: var(--bg_panel);
+  background-color: color-mix(in srgb, var(--bg_panel) 88%, transparent);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border_soft);
 }
 
