@@ -6,11 +6,11 @@
     { type: 'command', text: 'whoami' },
     { type: 'output', text: 'karen_vargas_medrano' },
     { type: 'command', text: 'cat perfil.txt' },
-    { type: 'output', text: 'Estudiante de Ingenieria de Sistemas, UCB San Pablo. Interes en desarrollo de software, desarrollo web y bases de datos.' },
+    { type: 'output', text: 'Estudiante de Ingeniería de Sistemas, UCB San Pablo. Interés en desarrollo de software, desarrollo web y bases de datos.' },
     { type: 'command', text: 'ls habilidades/' },
     { type: 'output', text: 'java  python  javascript  html5  css3  flutter  postgresql  git' },
     { type: 'command', text: './run proyectos.sh' },
-    { type: 'output', text: '6 proyectos academicos cargados correctamente.' }
+    { type: 'output', text: '6 proyectos académicos cargados correctamente.' }
   ];
 
   let lineIndex = 0;
