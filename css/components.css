@@ -28,6 +28,31 @@
   color: var(--text_main);
 }
 
+.email_toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translate(-50%, 12px);
+  background-color: var(--bg_panel);
+  border: 1px solid var(--border_soft);
+  color: var(--text_main);
+  padding: 0.65em 1.1em;
+  border-radius: var(--radius_base);
+  font-family: var(--font_mono);
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition_base), transform var(--transition_base);
+  z-index: 80;
+  box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.35);
+}
+
+.email_toast.is_visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 .page_hero {
   padding: 2.75rem 0 1.5rem;
   border-bottom: 1px solid var(--border_soft);
