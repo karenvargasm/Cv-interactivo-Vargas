@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karen Vargas Medrano - Desarrolladora Web</title>
+<meta name="description" content="CV interactivo de Karen Grissel Vargas Medrano, estudiante de Ingenieria de Sistemas.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="skip_link" href="#contenido_principal">Saltar al contenido principal</a>
+
+<header class="site_header">
+  <div class="header_inner">
+    <a class="logo_link" href="index.html">
+      <p class="logo_tag">&lt;/&gt;</p>
+      <p class="logo_name">karen.dev</p>
+    </a>
+    <div class="header_actions">
+      <button id="theme_toggle" class="theme_toggle" type="button" aria-pressed="false">
+        <span class="toggle_dot"></span>
+        <span class="toggle_label">Modo oscuro</span>
+      </button>
+      <button id="mobile_nav_toggle" class="mobile_nav_toggle" type="button" aria-label="Abrir menu" aria-controls="side_nav" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout_shell">
+  <nav class="side_nav" id="side_nav" aria-label="Navegacion principal">
+    <p class="nav_heading">explorador</p>
+    <ul class="nav_list">
+      <li><a href="index.html" class="nav_link"><span class="nav_dot" style="--dot-color:#61afef"></span>index.html</a></li>
+      <li><a href="perfil.html" class="nav_link"><span class="nav_dot" style="--dot-color:#c586c0"></span>perfil.html</a></li>
+      <li><a href="formacion.html" class="nav_link"><span class="nav_dot" style="--dot-color:#98c379"></span>formacion.html</a></li>
+      <li><a href="habilidades.html" class="nav_link"><span class="nav_dot" style="--dot-color:#e5a260"></span>habilidades.html</a></li>
+      <li><a href="proyectos.html" class="nav_link"><span class="nav_dot" style="--dot-color:#f07178"></span>proyectos.html</a></li>
+      <li><a href="experiencia.html" class="nav_link"><span class="nav_dot" style="--dot-color:#61afef"></span>experiencia.html</a></li>
+      <li><a href="contacto.html" class="nav_link"><span class="nav_dot" style="--dot-color:#c586c0"></span>contacto.html</a></li>
+    </ul>
+    <p class="nav_footer_note">SIS-214 / Tecnologias Web I</p>
+  </nav>
+
+  <main id="contenido_principal">
+
+    <section class="hero_section">
+      <div class="hero_text reveal_on_scroll">
+        <p class="hero_eyebrow">// estudiante de ingenieria de sistemas</p>
+        <h1>Karen Grissel Vargas Medrano</h1>
+        <p class="hero_summary">
+          Estudiante de sexto semestre de Ingenieria de Sistemas en la Universidad
+          Catolica Boliviana San Pablo, con interes en desarrollo de software,
+          desarrollo web, bases de datos y tecnologias de la informacion.
+        </p>
+        <ul class="hero_meta">
+          <li>La Paz, Bolivia</li>
+          <li>karenvargasmedrano1@gmail.com</li>
+          <li>+591 77770552</li>
+        </ul>
+        <div class="hero_actions">
+          <a class="btn btn_primary" href="contacto.html">Escribir un mensaje</a>
+          <a class="btn btn_secondary" href="proyectos.html">Ver proyectos</a>
+        </div>
+      </div>
+      <figure class="hero_figure reveal_on_scroll">
+        <img src="assets/images/avatar.svg" alt="Retrato ilustrado de Karen Vargas Medrano" width="190" height="190">
+      </figure>
+    </section>
+
+    <section class="home_terminal_wrap reveal_on_scroll">
+      <div class="terminal_window">
+        <div class="terminal_bar">
+          <span class="terminal_dot dot_red"></span>
+          <span class="terminal_dot dot_yellow"></span>
+          <span class="terminal_dot dot_green"></span>
+          <span class="terminal_title">karen@cv-interactivo: ~</span>
+        </div>
+        <div class="terminal_body" id="terminal_body"></div>
+      </div>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <div class="stat_grid">
+        <div class="stat_card">
+          <span class="stat_value">6</span>
+          <span class="stat_label">Proyectos academicos</span>
+        </div>
+        <div class="stat_card">
+          <span class="stat_value">7</span>
+          <span class="stat_label">Lenguajes y tecnologias</span>
+        </div>
+        <div class="stat_card">
+          <span class="stat_value">6</span>
+          <span class="stat_label">Semestre actual</span>
+        </div>
+        <div class="stat_card">
+          <span class="stat_value">2</span>
+          <span class="stat_label">Idiomas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal_on_scroll">
+      <h2>Explora el CV por secciones</h2>
+      <p>Cada tarjeta abre una pagina independiente con la informacion completa.</p>
+      <div class="section_nav_grid">
+        <a class="section_nav_card" href="perfil.html" style="--dot-color:#c586c0">
+          <span class="section_nav_file">perfil.html</span>
+          <h3>Perfil profesional</h3>
+          <p>Quien soy y que busco a nivel academico y profesional.</p>
+          <span class="section_nav_arrow">abrir pagina -&gt;</span>
+        </a>
+        <a class="section_nav_card" href="formacion.html" style="--dot-color:#98c379">
+          <span class="section_nav_file">formacion.html</span>
+          <h3>Formacion academica</h3>
+          <p>Universidad, carrera y semestre actual.</p>
+          <span class="section_nav_arrow">abrir pagina -&gt;</span>
+        </a>
+        <a class="section_nav_card" href="habilidades.html" style="--dot-color:#e5a260">
+          <span class="section_nav_file">habilidades.html</span>
+          <h3>Habilidades tecnicas</h3>
+          <p>Lenguajes, bases de datos, herramientas e idiomas.</p>
+          <span class="section_nav_arrow">abrir pagina -&gt;</span>
+        </a>
+        <a class="section_nav_card" href="proyectos.html" style="--dot-color:#f07178">
+          <span class="section_nav_file">proyectos.html</span>
+          <h3>Proyectos academicos</h3>
+          <p>Seis proyectos filtrables por categoria, con detalle interactivo.</p>
+          <span class="section_nav_arrow">abrir pagina -&gt;</span>
+        </a>
+        <a class="section_nav_card" href="experiencia.html" style="--dot-color:#61afef">
+          <span class="section_nav_file">experiencia.html</span>
+          <h3>Experiencia</h3>
+          <p>Trayectoria academica y practicas universitarias.</p>
+          <span class="section_nav_arrow">abrir pagina -&gt;</span>
+        </a>
+        <a class="section_nav_card" href="contacto.html" style="--dot-color:#c586c0">
+          <span class="section_nav_file">contacto.html</span>
+          <h3>Contacto</h3>
+          <p>Formulario con validacion para escribirme directamente.</p>
+          <span class="section_nav_arrow">abrir pagina -&gt;</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site_footer">
+  <p>&copy; <span id="current_year"></span> Karen Grissel Vargas Medrano</p>
+  <ul class="social_links" aria-label="Enlaces profesionales">
+    <li><a href="https://github.com/karenvargasm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a href="http://www.linkedin.com/in/karen-grissel-vargas-medrano-57955a436" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="mailto:karenvargasmedrano1@gmail.com">Correo</a></li>
+  </ul>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/terminal.js"></script>
+</body>
+</html>

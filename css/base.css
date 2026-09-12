@@ -1,0 +1,129 @@
+:root {
+  --font_mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font_sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --accent_function: #61afef;
+  --accent_keyword: #c586c0;
+  --accent_string: #98c379;
+  --accent_warning: #e5a260;
+  --accent_error: #f07178;
+
+  --bg_body: #1e1e2e;
+  --bg_panel: #262637;
+  --bg_panel_alt: #2d2d42;
+  --text_main: #e8e6e3;
+  --text_muted: #9aa0b3;
+  --border_soft: #3a3a52;
+
+  --radius_base: 10px;
+  --radius_lg: 16px;
+  --transition_base: 0.2s ease;
+  --transition_slow: 0.45s ease;
+  --max_width: 1180px;
+}
+
+[data-theme='light'] {
+  --bg_body: #fafafa;
+  --bg_panel: #ffffff;
+  --bg_panel_alt: #f1f1f5;
+  --text_main: #232330;
+  --text_muted: #5b5f70;
+  --border_soft: #e2e2ea;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg_body);
+  color: var(--text_main);
+  font-family: var(--font_sans);
+  line-height: 1.65;
+  transition: background-color var(--transition_base), color var(--transition_base);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font_mono);
+  line-height: 1.25;
+  margin: 0 0 0.55em;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
+h3 { font-size: 1.08rem; }
+h4 { font-size: 0.95rem; color: var(--text_muted); }
+
+p {
+  margin: 0 0 1em;
+  color: var(--text_main);
+}
+
+a {
+  color: var(--accent_function);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent_function);
+  outline-offset: 2px;
+}
+
+.skip_link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--accent_function);
+  color: #10131c;
+  padding: 0.75em 1.25em;
+  z-index: 100;
+  border-radius: 0 0 var(--radius_base) 0;
+}
+
+.skip_link:focus {
+  left: 0;
+}
+
+.reveal_on_scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--transition_slow), transform var(--transition_slow);
+}
+
+.reveal_on_scroll.is_visible {
+  opacity: 1;
+  transform: translateY(0);
+}
