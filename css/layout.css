@@ -19,22 +19,34 @@
 .logo_link {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.65em;
   text-decoration: none;
 }
 
-.logo_tag {
-  font-family: var(--font_mono);
-  font-weight: 700;
-  color: var(--accent_string);
-  margin: 0;
+.logo_badge {
+  display: block;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.logo_text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .logo_name {
   font-family: var(--font_mono);
-  font-size: 0.85rem;
-  color: var(--text_muted);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text_main);
   margin: 0;
+}
+
+.logo_sub {
+  font-family: var(--font_mono);
+  font-size: 0.72rem;
+  color: var(--text_muted);
 }
 
 .header_actions {
