@@ -1,12 +1,12 @@
 # CV Interactivo - Karen Grissel Vargas Medrano
 
-Proyecto para la Primera Evaluacion Practica de Tecnologias Web I (SIS-214),
-Universidad Catolica Boliviana.
+Proyecto para la Primera Evaluación Práctica de Tecnologías Web I (SIS-214),
+Universidad Católica Boliviana.
 
 ## Estructura del proyecto
 
 ```
-cv-final/
+Cv-interactivo-Vargas/
 ├── index.html
 ├── perfil.html
 ├── formacion.html
@@ -22,7 +22,8 @@ cv-final/
 ├── js/
 │   ├── theme.js
 │   ├── nav.js
-│   ├── terminal.js
+│   ├── email.js
+│   ├── formation-areas.js
 │   ├── reveal.js
 │   ├── projects.js
 │   └── contact.js
@@ -31,36 +32,38 @@ cv-final/
 └── README.md
 ```
 
-## Organizacion por bloques
+## Organización por bloques
 
-Cada seccion del CV vive en su propia pagina HTML y cada bloque de
+Cada sección del CV vive en su propia página HTML y cada bloque de
 funcionalidad tiene su propio archivo CSS o JS:
 
-- `base.css`: variables globales, reset y tipografia
-- `layout.css`: encabezado, navegacion lateral, pie de pagina
-- `components.css`: botones, tarjetas, terminal, modal, formulario
-- `pages.css`: estilos especificos de paginas y responsividad
+- `base.css`: variables globales, reset y tipografía
+- `layout.css`: encabezado, navegación lateral, pie de página
+- `components.css`: botones, tarjetas, modal, formulario, acordeón
+- `pages.css`: estilos específicos de páginas y responsividad
 - `theme.js`: modo claro y oscuro persistente
-- `nav.js`: enlace activo segun la pagina actual y menu movil
-- `terminal.js`: animacion de escritura en la pagina de inicio
+- `nav.js`: enlace activo según la página actual y menú móvil
+- `email.js`: copia el correo al portapapeles con confirmación visual
+- `formation-areas.js`: despliega el detalle de cada área de formación
 - `reveal.js`: animaciones al hacer scroll y barras de progreso
-- `projects.js`: datos de proyectos, filtro por categoria y modal
-- `contact.js`: validacion del formulario de contacto
+- `projects.js`: datos de proyectos, filtro por categoría y modal
+- `contact.js`: validación del formulario de contacto
 
 ## Funcionalidades
 
-- Navegacion multipagina real: cada subtitulo del menu abre su propio
-  archivo HTML en vez de saltar a un ancla dentro de la misma pagina
-- Terminal animada en la pagina de inicio
+- Navegación multipágina real: cada apartado del menú abre su propio
+  archivo HTML en vez de saltar a un ancla dentro de la misma página
+- Línea de tiempo de formación académica en la página de inicio
 - Barras de habilidades animadas al hacer scroll
-- Filtro de proyectos por categoria con modal de detalle
-- Formulario de contacto con validacion en tiempo real
-- Modo claro y oscuro persistente entre paginas
-- Diseno responsivo con menu lateral colapsable en movil
+- Filtro de proyectos por categoría con modal de detalle
+- Panel desplegable con el detalle de cada área de formación cursada
+- Formulario de contacto con validación en tiempo real
+- Modo claro y oscuro persistente entre páginas, con paleta cálida en modo claro
+- Diseño responsivo con menú lateral colapsable en móvil
 - Accesibilidad: enlace de salto al contenido, foco de teclado visible,
-  aria-live, aria-invalid, prefers-reduced-motion
+  aria-live, aria-invalid, aria-expanded, prefers-reduced-motion
 
-## Como ejecutarlo localmente
+## Cómo ejecutarlo localmente
 
 ```bash
 python3 -m http.server 8000
@@ -68,16 +71,16 @@ python3 -m http.server 8000
 
 Luego visita `http://localhost:8000`.
 
-## Publicacion en GitHub Pages
+## Publicación en GitHub Pages
 
 ```bash
 git add .
-git commit -m "refactor: paginas independientes por seccion del cv"
+git commit -m "docs: actualizar readme"
 git push
 ```
 
-En GitHub: Settings, Pages, Branch main, carpeta raiz, Save.
+En GitHub: Settings, Pages, Branch main, carpeta raíz, Save.
 
-## Validacion
+## Validación
 
-Antes de entregar, valida cada pagina en https://validator.w3.org/
+Antes de entregar, valida cada página en <https://validator.w3.org/>
